@@ -1,0 +1,530 @@
+{
+  "datasources": [
+    {
+      "title": "Bankrec",
+      "icon": "ri-user-settings-line",
+      "cardBg": "#16B1FF",
+      "lastEvent": "12/03/2024",
+      "avatarImg": "avatar-4.png",
+      "avatarName": "Mary Vaughn",
+      "stats": "25.6k",
+      "change": 42,
+      "subtitle": "Weekly Updates",
+      "to": "/p2e",
+      "schema": [
+        {
+          "name": "playerId",
+          "type": "integer",
+          "description": "Unique player identifier"
+        },
+        {
+          "name": "username",
+          "type": "string",
+          "description": "Player's chosen username"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "Player's email address"
+        },
+        {
+          "name": "registrationDate",
+          "type": "datetime",
+          "description": "Date and time the player registered"
+        },
+        {
+          "name": "lastLogin",
+          "type": "datetime",
+          "description": "Date and time the player last logged in"
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Account status (active, suspended, etc.)"
+        },
+        {
+          "name": "level",
+          "type": "integer",
+          "description": "Current level of the player"
+        },
+        {
+          "name": "experience",
+          "type": "integer",
+          "description": "Current experience points"
+        },
+        {
+          "name": "credits",
+          "type": "integer",
+          "description": "In-game currency balance"
+        },
+        {
+          "name": "vipStatus",
+          "type": "boolean",
+          "description": "Whether the player is a VIP member"
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "description": "Country of residence"
+        },
+        {
+          "name": "birthDate",
+          "type": "date",
+          "description": "Player's birth date"
+        },
+        {
+          "name": "achievements",
+          "type": "integer",
+          "description": "Number of achievements unlocked"
+        },
+        {
+          "name": "friendsCount",
+          "type": "integer",
+          "description": "Number of friends in the network"
+        },
+        {
+          "name": "gamesPlayed",
+          "type": "integer",
+          "description": "Total number of games played"
+        },
+        {
+          "name": "winRate",
+          "type": "float",
+          "description": "Percentage of games won"
+        },
+        {
+          "name": "favoriteGame",
+          "type": "string",
+          "description": "Player's favorite game"
+        },
+        {
+          "name": "totalSpent",
+          "type": "float",
+          "description": "Total amount of money spent"
+        },
+        {
+          "name": "teamId",
+          "type": "integer",
+          "description": "Identifier for the player's team"
+        },
+        {
+          "name": "bio",
+          "type": "string",
+          "description": "Short biography or description of the player"
+        }
+      ],
+      "info": {
+        "Total Players": "3200",
+        "Daily Active Users": "450",
+        "Monthly Active Users": "2600",
+        "Average Session Duration": "35 minutes",
+        "Top Country by Users": "United States",
+        "Average Revenue Per User": "$1.50",
+        "Retention Rate": "75%",
+        "Version": "1.4.2",
+        "API Calls Month": "2.5M",
+        "Error Rate": "0.02%"
+      },
+
+      "metadata": {
+        "Collection Method": "Automated System + Manual Entry",
+        "Data Quality": "Verified",
+        "Privacy Compliance": "GDPR, CCPA",
+        "Update Frequency": "Hourly",
+        "Schema Version": "3.7",
+        "Data Storage Location": "US-West Region",
+        "Encryption": "AES-256",
+        "Last Audit Date": "2024-02-15",
+        "Responsible Team": "Data Analytics Team",
+        "Contact Email": "data-team@example.com"
+      },
+      "searchableFields": [
+        {
+          "name": "dateRange",
+          "md": 12,
+          "label": "Date Range",
+          "height": 100,
+          "startDate": "2023-01-01",
+          "values" : [
+            65, 59, 80, 81, 56, 55, 40, 72, 88, 95, 102, 110, 105, 99, 85, 75, 65, 59, 80,
+            81, 56, 55, 40, 45, 50, 55, 60, 65, 70, 75, 80
+          ],
+          "type": "daterange"
+        },
+        {
+          "name": "entity",
+          "md": 6,
+          "label": "Entity",
+          "placeholder": "e.g., Document, Profile",
+          "type": "text"
+        },
+        {
+          "name": "userName",
+          "md": 6,
+          "label": "User Name",
+          "placeholder": "Enter user name",
+          "type": "text"
+        },
+        {
+          "name": "actionType",
+          "md": 12,
+          "label": "Event Type",
+          "placeholder": "Select one or more",
+          "type": "multiselect",
+          "options": ["Create", "Update", "Delete"]
+        }
+      ]
+    },
+    {
+      "title": "P2E",
+      "icon": "ri-user-settings-line",
+      "cardBg": "#16B1FF",
+      "lastEvent": "12/03/2024",
+      "avatarImg": "avatar-4.png",
+      "avatarName": "Mary Vaughn",
+      "stats": "25.6k",
+      "change": 42,
+      "subtitle": "Weekly Updates",
+      "to": "/p2e",
+      "schema": [
+        {
+          "name": "playerId",
+          "type": "integer",
+          "description": "Unique player identifier"
+        },
+        {
+          "name": "username",
+          "type": "string",
+          "description": "Player's chosen username"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "Player's email address"
+        },
+        {
+          "name": "registrationDate",
+          "type": "datetime",
+          "description": "Date and time the player registered"
+        },
+        {
+          "name": "lastLogin",
+          "type": "datetime",
+          "description": "Date and time the player last logged in"
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Account status (active, suspended, etc.)"
+        },
+        {
+          "name": "level",
+          "type": "integer",
+          "description": "Current level of the player"
+        },
+        {
+          "name": "experience",
+          "type": "integer",
+          "description": "Current experience points"
+        },
+        {
+          "name": "credits",
+          "type": "integer",
+          "description": "In-game currency balance"
+        },
+        {
+          "name": "vipStatus",
+          "type": "boolean",
+          "description": "Whether the player is a VIP member"
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "description": "Country of residence"
+        },
+        {
+          "name": "birthDate",
+          "type": "date",
+          "description": "Player's birth date"
+        },
+        {
+          "name": "achievements",
+          "type": "integer",
+          "description": "Number of achievements unlocked"
+        },
+        {
+          "name": "friendsCount",
+          "type": "integer",
+          "description": "Number of friends in the network"
+        },
+        {
+          "name": "gamesPlayed",
+          "type": "integer",
+          "description": "Total number of games played"
+        },
+        {
+          "name": "winRate",
+          "type": "float",
+          "description": "Percentage of games won"
+        },
+        {
+          "name": "favoriteGame",
+          "type": "string",
+          "description": "Player's favorite game"
+        },
+        {
+          "name": "totalSpent",
+          "type": "float",
+          "description": "Total amount of money spent"
+        },
+        {
+          "name": "teamId",
+          "type": "integer",
+          "description": "Identifier for the player's team"
+        },
+        {
+          "name": "bio",
+          "type": "string",
+          "description": "Short biography or description of the player"
+        }
+      ],
+      "info": {
+        "Total Players": "3200",
+        "Daily Active Users": "450",
+        "Monthly Active Users": "2600",
+        "Average Session Duration": "35 minutes",
+        "Top Country by Users": "United States",
+        "Average Revenue Per User": "$1.50",
+        "Retention Rate": "75%",
+        "Version": "1.4.2",
+        "API Calls Month": "2.5M",
+        "Error Rate": "0.02%"
+      },
+
+      "metadata": {
+        "Collection Method": "Automated System + Manual Entry",
+        "Data Quality": "Verified",
+        "Privacy Compliance": "GDPR, CCPA",
+        "Update Frequency": "Hourly",
+        "Schema Version": "3.7",
+        "Data Storage Location": "US-West Region",
+        "Encryption": "AES-256",
+        "Last Audit Date": "2024-02-15",
+        "Responsible Team": "Data Analytics Team",
+        "Contact Email": "data-team@example.com"
+      },
+      "searchableFields": [
+        {
+          "name": "dateRange",
+          "md": 12,
+          "label": "Date Range",
+          "height": 100,
+          "startDate": "2023-01-01",
+          "values" : [
+            65, 59, 80, 81, 56, 55, 40, 72, 88, 95, 102, 110, 105, 99, 85, 75, 65, 59, 80,
+            81, 56, 55, 40, 45, 50, 55, 60, 65, 70, 75, 80
+          ],
+          "type": "daterange"
+        },
+        {
+          "name": "entity",
+          "md": 6,
+          "label": "Entity",
+          "placeholder": "e.g., Document, Profile",
+          "type": "text"
+        },
+        {
+          "name": "userName",
+          "md": 6,
+          "label": "User Name",
+          "placeholder": "Enter user name",
+          "type": "text"
+        },
+        {
+          "name": "actionType",
+          "md": 12,
+          "label": "Event Type",
+          "placeholder": "Select one or more",
+          "type": "multiselect",
+          "options": ["Create", "Update", "Delete"]
+        }
+      ]
+    },
+    {
+      "title": "Adages",
+      "icon": "ri-user-settings-line",
+      "cardBg": "#16B1FF",
+      "lastEvent": "12/03/2024",
+      "avatarImg": "avatar-4.png",
+      "avatarName": "Mary Vaughn",
+      "stats": "25.6k",
+      "change": 42,
+      "subtitle": "Weekly Updates",
+      "to": "/p2e",
+      "schema": [
+        {
+          "name": "playerId",
+          "type": "integer",
+          "description": "Unique player identifier"
+        },
+        {
+          "name": "username",
+          "type": "string",
+          "description": "Player's chosen username"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "Player's email address"
+        },
+        {
+          "name": "registrationDate",
+          "type": "datetime",
+          "description": "Date and time the player registered"
+        },
+        {
+          "name": "lastLogin",
+          "type": "datetime",
+          "description": "Date and time the player last logged in"
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Account status (active, suspended, etc.)"
+        },
+        {
+          "name": "level",
+          "type": "integer",
+          "description": "Current level of the player"
+        },
+        {
+          "name": "experience",
+          "type": "integer",
+          "description": "Current experience points"
+        },
+        {
+          "name": "credits",
+          "type": "integer",
+          "description": "In-game currency balance"
+        },
+        {
+          "name": "vipStatus",
+          "type": "boolean",
+          "description": "Whether the player is a VIP member"
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "description": "Country of residence"
+        },
+        {
+          "name": "birthDate",
+          "type": "date",
+          "description": "Player's birth date"
+        },
+        {
+          "name": "achievements",
+          "type": "integer",
+          "description": "Number of achievements unlocked"
+        },
+        {
+          "name": "friendsCount",
+          "type": "integer",
+          "description": "Number of friends in the network"
+        },
+        {
+          "name": "gamesPlayed",
+          "type": "integer",
+          "description": "Total number of games played"
+        },
+        {
+          "name": "winRate",
+          "type": "float",
+          "description": "Percentage of games won"
+        },
+        {
+          "name": "favoriteGame",
+          "type": "string",
+          "description": "Player's favorite game"
+        },
+        {
+          "name": "totalSpent",
+          "type": "float",
+          "description": "Total amount of money spent"
+        },
+        {
+          "name": "teamId",
+          "type": "integer",
+          "description": "Identifier for the player's team"
+        },
+        {
+          "name": "bio",
+          "type": "string",
+          "description": "Short biography or description of the player"
+        }
+      ],
+      "info": {
+        "Total Players": "3200",
+        "Daily Active Users": "450",
+        "Monthly Active Users": "2600",
+        "Average Session Duration": "35 minutes",
+        "Top Country by Users": "United States",
+        "Average Revenue Per User": "$1.50",
+        "Retention Rate": "75%",
+        "Version": "1.4.2",
+        "API Calls Month": "2.5M",
+        "Error Rate": "0.02%"
+      },
+
+      "metadata": {
+        "Collection Method": "Automated System + Manual Entry",
+        "Data Quality": "Verified",
+        "Privacy Compliance": "GDPR, CCPA",
+        "Update Frequency": "Hourly",
+        "Schema Version": "3.7",
+        "Data Storage Location": "US-West Region",
+        "Encryption": "AES-256",
+        "Last Audit Date": "2024-02-15",
+        "Responsible Team": "Data Analytics Team",
+        "Contact Email": "data-team@example.com"
+      },
+      "searchableFields": [
+        {
+          "name": "dateRange",
+          "label": "Date Range",
+          "height": 100,
+          "startDate": "2023-01-01",
+          "md": 12,
+          "values" : [
+            65, 59, 80, 81, 56, 55, 40, 72, 88, 95, 102, 110, 105, 99, 85, 75, 65, 59, 80,
+            81, 56, 55, 40, 45, 50, 55, 60, 65, 70, 75, 80
+          ],
+          "type": "daterange"
+        },
+        {
+          "name": "entity",
+          "md": 6,
+          "label": "Entity",
+          "placeholder": "e.g., Document, Profile",
+          "type": "text"
+        },
+        {
+          "name": "userName",
+          "md": 6,
+          "label": "User Name",
+          "placeholder": "Enter user name",
+          "type": "text"
+        },
+        {
+          "name": "actionType",
+          "md": 12,
+          "label": "Event Type",
+          "placeholder": "Select one or more",
+          "type": "multiselect",
+          "options": ["Create", "Update", "Delete"]
+        }
+
+      ]
+    }
+  ]
+}
